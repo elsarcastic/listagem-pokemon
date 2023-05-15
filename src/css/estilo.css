@@ -1,0 +1,165 @@
+body {
+    font-family:Verdana;
+    background-color: #F2F2F2;
+    color: #031c6e;
+}
+
+body.body-escuro {
+    background-color: #262624;
+    color: #F2F2F2;
+}
+
+main {
+    max-width: 1280px;
+    margin:  20px auto;
+    padding: 25px 10px;
+}
+
+/* estilizandp o cabeçalho da página */
+
+header {
+    background-color: #A81A0C;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color:#F2F2F2;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+header img {
+    height: 40px;
+    transition: 0.2s ease-in-out;
+}
+
+header img:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+header button {
+    border: none;
+    background: none;
+}
+
+header .box-logo {
+    width: 235px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .box-logo span {
+    padding-top: 5px;
+}
+
+/* estilizando o container dos cards */
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* estilizando o card dos pokemons */
+main .cartao-pokemon {
+    width: 200px;
+    border: 1px solid #031c6e;
+    border-radius: 20px;
+    padding: 3px 6px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.body-escuro .cartao-pokemon {
+    background-color: #b6b5b5;
+}
+
+main .cartao-pokemon:hover {
+    background-color: #75e1fc;
+    border: none;
+}
+
+main .cartao-pokemon .info {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    align-items: center;
+    gap: 5px;
+}
+
+main .cartao-pokemon .tipos {
+    text-transform: uppercase;
+}
+
+main .cartao-pokemon .info .nome {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+main .cartao-pokemon .info .num {
+    font-size: 13px;
+    font-weight: 600;
+    color: #7a7a7a;
+}
+
+main .cartao-pokemon .gif {
+    width: 60px;
+    height: 60px;
+}
+
+/* estilizando os tipos dos pokemons */
+
+main .cartao-pokemon .tipos {
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    gap: 5px;
+}
+
+main .cartao-pokemon .tipos li {
+    padding: 2px 6px;
+    border-radius: 4px;    
+} 
+
+/*definindo a cor dos tipos */
+
+.tipo-agua {
+    color: #08639c;
+    background-color: #79CFD9;
+}
+
+.tipo-grama {
+    color: #0f5e1a;
+    background-color: #89d887;
+}
+
+.tipo-fogo {
+    color: #A62F03;
+    background-color: #e99a39;
+}
+
+.tipo-inseto {
+    color: #445a07;
+    background-color: #a0f055;
+}
+
+.tipo-veneno {
+    color: #7341A6;
+    background-color: #EAAFF9;
+}
+
+/* estilizando a descrição */
+
+main .descricao-pokemon {
+    max-height: 140px;
+    overflow: auto;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+}
